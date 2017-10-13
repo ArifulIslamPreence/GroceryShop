@@ -1,0 +1,508 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ECD9015F-78F8-455B-913D-92ACAAB281FE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>grocery_shop</RootNamespace>
+    <AssemblyName>grocery shop</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Do The Shopping</ProductName>
+    <PublisherName>PreTuZa</PublisherName>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>AAF60D62671B5E7935F1D2964C295702A079FED6</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>grocery shop_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="action2f.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="action2f.Designer.cs">
+      <DependentUpon>action2f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="additionf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="additionf.Designer.cs">
+      <DependentUpon>additionf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminf.Designer.cs">
+      <DependentUpon>adminf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminloginLogicLayer.cs" />
+    <Compile Include="alogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alogin.Designer.cs">
+      <DependentUpon>alogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="assesment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="assesment.Designer.cs">
+      <DependentUpon>assesment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="categoryf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="categoryf.Designer.cs">
+      <DependentUpon>categoryf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="changecat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changecat.Designer.cs">
+      <DependentUpon>changecat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clogin.Designer.cs">
+      <DependentUpon>clogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cosmeticeditf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cosmeticeditf.Designer.cs">
+      <DependentUpon>cosmeticeditf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cosmeticsf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cosmeticsf.Designer.cs">
+      <DependentUpon>cosmeticsf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="csignupf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="csignupf.Designer.cs">
+      <DependentUpon>csignupf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CurrentUser.cs" />
+    <Compile Include="C_signUp.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="editionf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editionf.Designer.cs">
+      <DependentUpon>editionf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="greetingsf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="greetingsf.Designer.cs">
+      <DependentUpon>greetingsf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="noticef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="noticef.Designer.cs">
+      <DependentUpon>noticef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="purchasef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="purchasef.Designer.cs">
+      <DependentUpon>purchasef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="qsnf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qsnf.Designer.cs">
+      <DependentUpon>qsnf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rawedit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rawedit.Designer.cs">
+      <DependentUpon>rawedit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rawitemsf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rawitemsf.Designer.cs">
+      <DependentUpon>rawitemsf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="repeatf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="repeatf.Designer.cs">
+      <DependentUpon>repeatf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="toyedit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="toyedit.Designer.cs">
+      <DependentUpon>toyedit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="toyf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="toyf.Designer.cs">
+      <DependentUpon>toyf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserloginLogicLayer.cs" />
+    <Compile Include="welcomef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="welcomef.Designer.cs">
+      <DependentUpon>welcomef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aboutf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aboutf.Designer.cs">
+      <DependentUpon>aboutf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="action2f.resx">
+      <DependentUpon>action2f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="additionf.resx">
+      <DependentUpon>additionf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminf.resx">
+      <DependentUpon>adminf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alogin.resx">
+      <DependentUpon>alogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="assesment.resx">
+      <DependentUpon>assesment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="categoryf.resx">
+      <DependentUpon>categoryf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changecat.resx">
+      <DependentUpon>changecat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clogin.resx">
+      <DependentUpon>clogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cosmeticeditf.resx">
+      <DependentUpon>cosmeticeditf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cosmeticsf.resx">
+      <DependentUpon>cosmeticsf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="csignupf.resx">
+      <DependentUpon>csignupf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editionf.resx">
+      <DependentUpon>editionf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="greetingsf.resx">
+      <DependentUpon>greetingsf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="noticef.resx">
+      <DependentUpon>noticef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="purchasef.resx">
+      <DependentUpon>purchasef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qsnf.resx">
+      <DependentUpon>qsnf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rawedit.resx">
+      <DependentUpon>rawedit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rawitemsf.resx">
+      <DependentUpon>rawitemsf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="repeatf.resx">
+      <DependentUpon>repeatf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="toyedit.resx">
+      <DependentUpon>toyedit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="toyf.resx">
+      <DependentUpon>toyf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="welcomef.resx">
+      <DependentUpon>welcomef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aboutf.resx">
+      <DependentUpon>aboutf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="grocery shop_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15722483_1292142794213927_1330899735_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slide 7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slide 11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\candy-store %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\67842821-black-abstract-wallpapers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background-black-blue-abstract-wallpapers-images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_65102.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black-and-White-Wallpaper-Designs-Background-Download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black-and-White-Wallpaper-Designs-Background-Download1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black-minimalistic-waves-black-background-wallpaper-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract-black-wallpaper-wallpapers-fresh-waves-minimalistic-images-gradient.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\330082.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black-and-Red-Abstract-Pictures.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black-and-Red-Abstract-Free-Download-HD-Wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fresh-Fruit-Apple-Black-Background-for-Desktop-Wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wine-Glass-With-Fruit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract-hd-black.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_237187.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black-and-Red-Abstract-Wallpaper-Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract black dark white swirls 1280x800 wallpaper_www.wall321.com_56.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aWGtP9F.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black-And-White-Abstract-Flowers-Wallpaper-.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_319726.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greyscale-abstract-97.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black-Abstract-Screenshots.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dqdnoBG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red-And-Black-Abstract-HD-Picture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract black signs paint directions arrows 1920x1080 wallpaper_www.wall321.com_19.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black-And-White-Abstract-Flowers-Wallpaper-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50433_simple_black_and_white_door.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tumblr-static-dark-background-simple-black-and-white-liniar-background-hd-1920x1080.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7688-curve-simplicity.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpaper-2382590.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black-Minimal-minimalistic-HD-wallpapers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Batman-Rise-Minimal-Wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tumblr-static-dark-background-simple-black-and-white-liniar-background-hd-1920x10801.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black-Minimal-minimalistic-HD-wallpapers1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\floral-wallpaper-wallpapers-trippy-black-simple-white.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\347956-abstract-dark-simple-red-736x459.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black-and-Blue-Abstract-HD-Desktop-Wallpapers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\simple elegant widescreen hd wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download-dark-simple-fresh-new-wallpaper-full-hd-wallpapers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black-minimalistic-waves-black-background-wallpaper-11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black-Minimal-minimalistic-HD-wallpapers2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_237187 %282%29.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
