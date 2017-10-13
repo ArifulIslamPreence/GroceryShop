@@ -1,0 +1,5 @@
+D:\Study\codes\c# project\grocery shop\ShopModel\bin\Debug\ShopModel.dll
+D:\Study\codes\c# project\grocery shop\ShopModel\bin\Debug\ShopModel.pdb
+D:\Study\codes\c# project\grocery shop\ShopModel\obj\Debug\ShopModel.csprojResolveAssemblyReference.cache
+D:\Study\codes\c# project\grocery shop\ShopModel\obj\Debug\ShopModel.dll
+D:\Study\codes\c# project\grocery shop\ShopModel\obj\Debug\ShopModel.pdb
